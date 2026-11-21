@@ -1,0 +1,13 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:01<06:14,  1.30s/it]Loading weights:  47%|████▋     | 135/290 [00:01<00:01, 128.03it/s]Loading weights:  66%|██████▌   | 190/290 [00:01<00:00, 116.47it/s]Loading weights:  78%|███████▊  | 225/290 [00:02<00:00, 100.85it/s]Loading weights:  86%|████████▌ | 249/290 [00:02<00:00, 102.47it/s]Loading weights:  93%|█████████▎| 269/290 [00:02<00:00, 96.50it/s] Loading weights:  98%|█████████▊| 285/290 [00:03<00:00, 98.63it/s]Loading weights: 100%|██████████| 290/290 [00:03<00:00, 93.67it/s]
+{
+  "mode": "zeroshot",
+  "n": 100,
+  "valid_json": 0.06,
+  "exact_match": 0.0,
+  "field_acc": 0.0,
+  "exact_match_seen_templates": 0.0,
+  "exact_match_heldout_templates": 0.0
+}
+failures to inspect: ['i spent 2506 rupees on phone recharge', 'metro card recharge cost me 697.0 bucks', 'Paid ₹227 for movie ticket just now', 'log 858.7 rs metro card recharge', 'I spent 4286 rupees on movie ticket']

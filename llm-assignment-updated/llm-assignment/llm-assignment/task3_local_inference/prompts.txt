@@ -1,0 +1,10 @@
+Explain in three sentences why the sky is blue.
+Write a Python function that returns the n-th Fibonacci number iteratively, with a docstring.
+Summarize the plot of Romeo and Juliet in exactly two sentences.
+A train travels 120 km in 1.5 hours. What is its average speed in m/s? Show your steps.
+Translate to French: "Where is the nearest railway station?"
+List five differences between a process and a thread.
+Convert this to JSON with keys name, age, city: "Riya is 24 and lives in Pune."
+Give me a polite email declining a meeting invitation for Friday.
+What is the capital of Australia, and why is it not Sydney?
+Explain what overfitting is to a high-school student using an analogy.

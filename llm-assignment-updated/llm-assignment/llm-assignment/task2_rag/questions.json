@@ -1,0 +1,77 @@
+[
+  {
+    "question": "How many tokens was Llama 2 pretrained on, and why did they pick that amount?",
+    "gold_page": 5,
+    "gold_snippet": "We trained on 2 trillion tokens of data as this provides a good performance\u2013cost trade-off, up-sampling the most factual sources in an effort to increase knowledge and dampen hallucinations."
+  },
+  {
+    "question": "What did Meta change compared with Llama 1, and which Llama 2 model sizes were released?",
+    "gold_page": 4,
+    "gold_snippet": "We also increased the size of the pretraining corpus by 40%, doubled the context length of the model, and adopted grouped-query attention (Ainslie et al., 2023). We are releasing variants of Llama 2 with 7B, 13B, and 70B parameters."
+  },
+  {
+    "question": "Which optimizer settings and learning rate schedule were used for pretraining?",
+    "gold_page": 5,
+    "gold_snippet": "with \u03b21 = 0.9, \u03b22 = 0.95, eps = 10\u22125 . We use a cosine learning rate schedule, with warmup of 2000 steps, and decay final learning rate down to 10% of the peak learning rate."
+  },
+  {
+    "question": "How many GPU hours did pretraining take and what were the estimated carbon emissions?",
+    "gold_page": 7,
+    "gold_snippet": "A cumulative of 3.3M GPU hours of computation was performed on hardware of type A100-80GB (TDP of 400W or 350W). We estimate the total emissions for training to be 539 tCO2 eq, of which 100% were directly offset by Meta\u2019s sustainability program."
+  },
+  {
+    "question": "Why did the team stop collecting supervised fine-tuning data, and how many examples did they end up with?",
+    "gold_page": 9,
+    "gold_snippet": "We found that SFT annotations in the order of tens of thousands was enough to achieve a high-quality result. We stopped annotating SFT after collecting a total of 27,540 annotations. Note that we do not include any Meta user data."
+  },
+  {
+    "question": "During supervised fine-tuning, which tokens contribute to the loss, and for how many epochs was the model trained?",
+    "gold_page": 9,
+    "gold_snippet": "We utilize an autoregressive objective and zero-out the loss on tokens from the user prompt, so as a result, we backpropagate only on answer tokens. Finally, we fine-tune the model for 2 epochs."
+  },
+  {
+    "question": "Besides choosing the better response, how did annotators indicate how strongly they preferred it?",
+    "gold_page": 10,
+    "gold_snippet": "to which they prefer their chosen response over the alternative: either their choice is significantly better, better, slightly better, or negligibly better/ unsure. For our collection of preference annotations, we focus on helpfulness and safety."
+  },
+  {
+    "question": "Why does Llama 2-Chat use two reward models instead of a single one?",
+    "gold_page": 10,
+    "gold_snippet": "Others have found that helpfulness and safety sometimes trade off (Bai et al., 2022a), which can make it challenging for a single reward model to perform well on both. To address this, we train two separate reward models, one optimized for helpfulness"
+  },
+  {
+    "question": "What kind of loss is used to train the reward model on human preference pairs?",
+    "gold_page": 11,
+    "gold_snippet": "we convert our collected pairwise human preference data into a binary ranking label format (i.e., chosen & rejected) and enforce the chosen response to have a higher score than its counterpart. We used a binary ranking loss consistent with Ouyang et al. (2022)"
+  },
+  {
+    "question": "In what two ways does rejection sampling fine-tuning differ from PPO?",
+    "gold_page": 14,
+    "gold_snippet": "Breadth \u2014 in Rejection Sampling, the model explores K samples for a given prompt, while only one generation is done for PPO. \u2022 Depth \u2014 in PPO, during training at step t the sample is a function of the updated model policy"
+  },
+  {
+    "question": "What batch size, mini-batch size and clip threshold were used in each PPO iteration?",
+    "gold_page": 15,
+    "gold_snippet": "a constant learning rate of 10\u22126 . For each PPO iteration we use a batch size of 512, a PPO clip threshold of 0.2, a mini-batch size of 64, and take one gradient step per mini-batch."
+  },
+  {
+    "question": "What problem with multi-turn conversations was Ghost Attention designed to fix?",
+    "gold_page": 16,
+    "gold_snippet": "our initial RLHF models tended to forget the initial instruction after a few turns of dialogue, as illustrated in Figure 9 (left). To address these limitations, we propose Ghost Attention (GAtt), a very simple method inspired by Context Distillation"
+  },
+  {
+    "question": "How is a preprompt like 'You are a safe and responsible assistant' used to make the model safer?",
+    "gold_page": 23,
+    "gold_snippet": "This involves generating safer model responses by prefixing a prompt with a safety preprompt, e.g., \u201cYou are a safe and responsible assistant,\u201d and then fine-tuning the model on the safer responses without the preprompt, which essentially distills the safety preprompt (context) into the model."
+  },
+  {
+    "question": "Who took part in red teaming the models, and how many people were involved?",
+    "gold_page": 28,
+    "gold_snippet": "We conducted a series of red teaming with various groups of internal employees, contract workers, and external vendors. These teams included over 350 people, including domain experts in cybersecurity, election fraud, social media misinformation, legal, policy, civil rights"
+  },
+  {
+    "question": "What is the knowledge cutoff of the training data?",
+    "gold_page": 77,
+    "gold_snippet": "Data Freshness The pretraining data has a cutoff of September 2022, but some tuning data is more recent, up to July 2023."
+  }
+]

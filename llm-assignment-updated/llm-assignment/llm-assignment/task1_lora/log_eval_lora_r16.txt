@@ -1,0 +1,12 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<02:26,  1.97it/s]Loading weights:  43%|████▎     | 125/290 [00:00<00:00, 271.36it/s]Loading weights:  67%|██████▋   | 195/290 [00:00<00:00, 309.24it/s]Loading weights:  86%|████████▌ | 250/290 [00:01<00:00, 290.10it/s]Loading weights: 100%|██████████| 290/290 [00:01<00:00, 259.14it/s]
+{
+  "mode": "lora",
+  "n": 100,
+  "valid_json": 1.0,
+  "exact_match": 0.77,
+  "field_acc": 0.8291666666666666,
+  "exact_match_seen_templates": 1.0,
+  "exact_match_heldout_templates": 0.6349206349206349
+}
+failures to inspect: ['metro card recharge cost me 697.0 bucks', 'Drop Isha a note saying I will be late', 'phone recharge cost me 762.0 bucks', 'phone recharge cost me 998 bucks', 'I need a nudge to pay the electricity bill on Friday evening, please']

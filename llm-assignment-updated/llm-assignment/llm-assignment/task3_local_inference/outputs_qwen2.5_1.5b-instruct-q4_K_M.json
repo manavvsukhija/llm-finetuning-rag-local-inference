@@ -1,0 +1,62 @@
+[
+  {
+    "prompt": "Explain in three sentences why the sky is blue.",
+    "output": "The sky appears blue due to Rayleigh scattering by air molecules, which causes shorter-wavelength blue light to scatter more than longer-wavelength red light. This scattering results in the blue light being scattered in all directions, making the sky appear blue to us.",
+    "tokens": 52,
+    "tok_per_s": 23.9
+  },
+  {
+    "prompt": "Write a Python function that returns the n-th Fibonacci number iteratively, with a docstring.",
+    "output": "Certainly! Below is a Python function that calculates the n-th Fibonacci number iteratively, along with a docstring explaining the code methods:\n\n```python\ndef fibonacci_iterative(n):\n    \"\"\"\n    Calculate the n-th Fibonacci number iteratively.\n\n    Parameters:\n    n (int): The position in the Fibonacci sequence.\n\n    Returns:\n    int: The n-th Fibonacci number.\n\n    Examples:\n    >>> fibonacci_iterative(1)\n    1\n    >>> fibonacci_iterative(5)\n    5\n    >>> fibonacci_iterative(10)\n    55\n    \"\"\"\n    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n\n    a, b = 0, 1\n    for _ in range(2, n + 1):\n        a, b = b, a + b\n    return b\n\n# Example usage\nprint(fibonacci_iterative(1))  # Output: 1",
+    "tokens": 200,
+    "tok_per_s": 24.2
+  },
+  {
+    "prompt": "Summarize the plot of Romeo and Juliet in exactly two sentences.",
+    "output": "Romeo and Juliet are young star-crossed lovers from feuding families who secretly marry in Verona's Capulet and Montague households, leading to their tragic deaths and the eventual reconciliation of their families.",
+    "tokens": 43,
+    "tok_per_s": 23.6
+  },
+  {
+    "prompt": "A train travels 120 km in 1.5 hours. What is its average speed in m/s? Show your steps.",
+    "output": "To find the average speed of the train in meters per second (m/s), we need to follow these steps:\n\n1. **Convert the distance from kilometers to meters:**\n   - 1 kilometer (km) = 1000 meters (m)\n   - Therefore, 120 km = 120 * 1000 m = 120,000 meters (m)\n\n2. **Convert the time from hours to seconds:**\n   - 1 hour (h) = 3600 seconds (s)\n   - Therefore, 1.5 hours = 1.5 * 3600 s = 5400 seconds (s)\n\n3. **Calculate the average speed:**\n   - Average speed = Distance / Time\n   - Average speed = 120,000 m / 5400 s\n\n4. **Perform the division:**\n   - Average",
+    "tokens": 200,
+    "tok_per_s": 24.7
+  },
+  {
+    "prompt": "Translate to French: \"Where is the nearest railway station?\"",
+    "output": "\"Où se trouve la gare la plus proche ?\"",
+    "tokens": 15,
+    "tok_per_s": 11.9
+  },
+  {
+    "prompt": "List five differences between a process and a thread.",
+    "output": "Sure, here are five differences between a process and a thread:\n\n1. **Resource Ownership**: A process owns all the resources it uses, whereas a thread can be part of multiple processes. This means that a process can have multiple threads, but a thread cannot have multiple processes.\n\n2. **Resource Allocation**: A process allocates and deallocates resources independently, while a thread within a process shares the same resources. This means that a process can allocate and deallocate resources without affecting other processes, whereas a thread within a process shares the same resources.\n\n3. **Resource Management**: A process manages its own resources, including memory, file handles, and other system resources. A thread within a process shares these resources, so managing them can be more complex.\n\n4. **Resource Sharing**: A process can share resources with other processes, but a thread within a process shares the same resources. This means that a process can have multiple threads, but a thread cannot have multiple processes.\n\n5. **Resource Visibility",
+    "tokens": 200,
+    "tok_per_s": 25.0
+  },
+  {
+    "prompt": "Convert this to JSON with keys name, age, city: \"Riya is 24 and lives in Pune.\"",
+    "output": "```json\n{\n  \"name\": \"Riya\",\n  \"age\": 24,\n  \"city\": \"Pune\"\n}\n```",
+    "tokens": 31,
+    "tok_per_s": 21.6
+  },
+  {
+    "prompt": "Give me a polite email declining a meeting invitation for Friday.",
+    "output": "Subject: Thank you for the invitation, but I'm unable to attend this Friday's meeting\n\nDear [Name],\n\nThank you very much for the invitation to the meeting on Friday. I really appreciate the opportunity to discuss the project with you and the team. Unfortunately, I have some other commitments that day and I'm afraid I won't be able to make it.\n\nPlease let me know if there's anything I can do to help prepare for the meeting or if there's another time that would work better for you. I'm always happy to help out and look forward to our future discussions.\n\nThank you again for the invitation and I hope we can find a time to meet soon.\n\nBest regards,  \n[Your Name]",
+    "tokens": 145,
+    "tok_per_s": 26.1
+  },
+  {
+    "prompt": "What is the capital of Australia, and why is it not Sydney?",
+    "output": "The capital of Australia is Canberra. Canberra is not Sydney because it is the capital city of the Australian Federal Government, while Sydney is the most populous city in Australia. Canberra is located in the Australian Capital Territory and is the seat of the Australian Government, including the Parliament of Australia, the High Court of Australia, and the Australian Bureau of Statistics.",
+    "tokens": 70,
+    "tok_per_s": 18.6
+  },
+  {
+    "prompt": "Explain what overfitting is to a high-school student using an analogy.",
+    "output": "Imagine you're trying to guess what your friend's favorite ice cream flavor is by asking them a series of yes or no questions. If you ask enough questions, you might get very close to the right answer, but if you ask too many questions, you might start to ask the same questions over and over, even if the flavor hasn't changed. This is similar to overfitting in machine learning. Overfitting happens when a model is too complex and starts to memorize the training data rather than learning the underlying pattern. This means the model performs well on the training data but poorly on new, unseen data. It's like if you memorized the answers to your friend's ice cream questions but couldn't guess the flavor if you hadn't asked the question before.",
+    "tokens": 156,
+    "tok_per_s": 21.9
+  }
+]

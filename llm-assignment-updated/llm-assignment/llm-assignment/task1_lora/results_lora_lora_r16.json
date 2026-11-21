@@ -1,0 +1,1161 @@
+{
+  "metrics": {
+    "mode": "lora",
+    "n": 100,
+    "valid_json": 1.0,
+    "exact_match": 0.77,
+    "field_acc": 0.8291666666666666,
+    "exact_match_seen_templates": 1.0,
+    "exact_match_heldout_templates": 0.6349206349206349
+  },
+  "predictions": [
+    {
+      "text": "i spent 2506 rupees on phone recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 2506,
+        "category": "bills",
+        "item": "phone recharge"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 2506, \"category\": \"bills\", \"item\": \"phone recharge\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "metro card recharge cost me 697.0 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 697.0,
+        "category": "transport",
+        "item": "metro card recharge"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 697.0, \"category\": \"transport\", \"item\": \"metro card recharge cost me 697.0 bucks\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Paid ₹227 for movie ticket just now",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 227,
+        "category": "entertainment",
+        "item": "movie ticket"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 227, \"category\": \"entertainment\", \"item\": \"movie ticket\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "log 858.7 rs metro card recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 858.7,
+        "category": "transport",
+        "item": "metro card recharge"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 858.7, \"category\": \"transport\", \"item\": \"metro card recharge\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "I spent 4286 rupees on movie ticket",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 4286,
+        "category": "entertainment",
+        "item": "movie ticket"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 4286, \"category\": \"entertainment\", \"item\": \"movie ticket\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "Can you remind me to call the plumber tomorrow at 9 am?",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "call the plumber",
+        "when": "tomorrow at 9 am"
+      },
+      "pred_raw": "{\"intent\": \"set_reminder\", \"task\": \"call the plumber\", \"when\": \"tomorrow at 9 am\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "Add an expense of 869.0 for phone recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 869.0,
+        "category": "bills",
+        "item": "phone recharge"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 869.0, \"category\": \"bills\", \"item\": \"phone recharge\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "WhatsApp Priya - please send the notes",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Priya",
+        "message": "please send the notes"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Priya\", \"message\": \"please send the notes\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Add an expense of 542.0 for metro card recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 542.0,
+        "category": "transport",
+        "item": "metro card recharge"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 542.0, \"category\": \"transport\", \"item\": \"metro card recharge\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "Drop Isha a note saying I will be late",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Isha",
+        "message": "I will be late"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Isha\", \"message\": \"a note saying I will be late\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "doctor visit cost me 4733 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 4733,
+        "category": "health",
+        "item": "doctor visit"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 4733, \"category\": \"health\", \"item\": \"doctor visit\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Paid ₹410.4 for movie ticket just now",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 410.4,
+        "category": "entertainment",
+        "item": "movie ticket"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 410.4, \"category\": \"entertainment\", \"item\": \"movie ticket\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Paid ₹158.9 for textbook just now",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 158.9,
+        "category": "education",
+        "item": "textbook"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 158.9, \"category\": \"education\", \"item\": \"textbook\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "headphones cost me 4846 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 4846,
+        "category": "shopping",
+        "item": "headphones"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 4846, \"category\": \"shopping\", \"item\": \"headphones\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "phone recharge cost me 762.0 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 762.0,
+        "category": "bills",
+        "item": "phone recharge"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 762.0, \"category\": \"bills\", \"item\": \"phone recharge cost me 762.0 bucks\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "phone recharge cost me 998 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 998,
+        "category": "bills",
+        "item": "phone recharge"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 998, \"category\": \"bills\", \"item\": \"phone recharge cost me 998 bucks\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "tonight at 8, remind me to pick up the parcel",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "pick up the parcel",
+        "when": "tonight at 8"
+      },
+      "pred_raw": "{\"intent\": \"set_reminder\", \"task\": \"pick up the parcel\", \"when\": \"tonight at 8\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "I need a nudge to pay the electricity bill on Friday evening, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "pay the electricity bill",
+        "when": "on Friday evening"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"I need a nudge to pay the electricity bill\", \"message\": \"on Friday evening\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Add an expense of 4672 for doctor visit",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 4672,
+        "category": "health",
+        "item": "doctor visit"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 4672, \"category\": \"health\", \"item\": \"doctor visit\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "doctor visit cost me 3733 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 3733,
+        "category": "health",
+        "item": "doctor visit"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 3733, \"category\": \"health\", \"item\": \"doctor visit\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Add an expense of 1550 for auto ride",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 1550,
+        "category": "transport",
+        "item": "auto ride"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 1550, \"category\": \"transport\", \"item\": \"auto ride\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "log 419.3 rs doctor visit",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 419.3,
+        "category": "health",
+        "item": "doctor visit"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 419.3, \"category\": \"health\", \"item\": \"doctor visit\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "Log 3658 rs doctor visit",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 3658,
+        "category": "health",
+        "item": "doctor visit"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 3658, \"category\": \"health\", \"item\": \"doctor visit\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "I spent 158.1 rupees on coffee",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 158.1,
+        "category": "food",
+        "item": "coffee"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 158.1, \"category\": \"food\", \"item\": \"coffee\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "pizza cost me 3633 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 3633,
+        "category": "food",
+        "item": "pizza"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 3633, \"category\": \"food\", \"item\": \"pizza\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "I need a nudge to back up my laptop at 6 pm today, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "back up my laptop",
+        "when": "at 6 pm today"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"I need a nudge to back up my laptop\", \"message\": \"at 6 pm today\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Don't let me forget to prepare for the viva in two hours",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "prepare for the viva",
+        "when": "in two hours"
+      },
+      "pred_raw": "{\"intent\": \"set_reminder\", \"task\": \"prepare for the viva\", \"when\": \"in two hours\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Paid ₹1734 for doctor visit just now",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 1734,
+        "category": "health",
+        "item": "doctor visit"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 1734, \"category\": \"health\", \"item\": \"doctor visit\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Add an expense of 1065 for auto ride",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 1065,
+        "category": "transport",
+        "item": "auto ride"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 1065, \"category\": \"transport\", \"item\": \"auto ride\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "pizza cost me 2845 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 2845,
+        "category": "food",
+        "item": "pizza"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 2845, \"category\": \"food\", \"item\": \"pizza\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Add an expense of 3650 for metro card recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 3650,
+        "category": "transport",
+        "item": "metro card recharge"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 3650, \"category\": \"transport\", \"item\": \"metro card recharge\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "movie ticket cost me 3668 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 3668,
+        "category": "entertainment",
+        "item": "movie ticket"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 3668, \"category\": \"entertainment\", \"item\": \"movie ticket cost me 3668 bucks\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Log 2814 rs movie ticket",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 2814,
+        "category": "entertainment",
+        "item": "movie ticket"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 2814, \"category\": \"entertainment\", \"item\": \"movie ticket\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "Drop Meera a note saying lunch at 1?",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Meera",
+        "message": "lunch at 1?"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Meera\", \"message\": \"lunch at 1?\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Drop Karan a note saying lunch at 1?",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Karan",
+        "message": "lunch at 1?"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Karan\", \"message\": \"lunch at 1?\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Add an expense of 681.4 for phone recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 681.4,
+        "category": "bills",
+        "item": "phone recharge"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 681.4, \"category\": \"bills\", \"item\": \"phone recharge\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "Add an expense of 673.9 for coffee",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 673.9,
+        "category": "food",
+        "item": "coffee"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 673.9, \"category\": \"food\", \"item\": \"coffee\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "Don't let me forget to email the report this Sunday morning",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "email the report",
+        "when": "this Sunday morning"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"I don't want to forget to email the report\", \"message\": \"this Sunday morning\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "WhatsApp Karan - lunch at 1?",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Karan",
+        "message": "lunch at 1?"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Karan\", \"message\": \"lunch at 1?\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "I need a nudge to email the report at 6 pm today, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "email the report",
+        "when": "at 6 pm today"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"email the report\", \"message\": \"at 6 pm today\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Don't let me forget to email the report tomorrow at 9 am",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "email the report",
+        "when": "tomorrow at 9 am"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"I don't want to forget to email the report\", \"message\": \"tomorrow at 9 am\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Set a reminder: back up my laptop in two hours",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "back up my laptop",
+        "when": "in two hours"
+      },
+      "pred_raw": "{\"intent\": \"set_reminder\", \"task\": \"back up my laptop\", \"when\": \"in two hours\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "Can you remind me to back up my laptop on Friday evening?",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "back up my laptop",
+        "when": "on Friday evening"
+      },
+      "pred_raw": "{\"intent\": \"set_reminder\", \"task\": \"back up my laptop\", \"when\": \"on Friday evening\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "I need a nudge to water the plants at 6 pm today, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "water the plants",
+        "when": "at 6 pm today"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"I need a nudge to water the plants\", \"message\": \"at 6 pm today, please\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Don't let me forget to book train tickets on 25 December",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "book train tickets",
+        "when": "on 25 December"
+      },
+      "pred_raw": "{\"intent\": \"set_reminder\", \"task\": \"book train tickets\", \"when\": \"on 25 December\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "don't let me forget to email the report tomorrow at 9 am",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "email the report",
+        "when": "tomorrow at 9 am"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"I don't want to forget to email the report\", \"message\": \"tomorrow at 9 am\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Paid ₹4396 for phone recharge just now",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 4396,
+        "category": "bills",
+        "item": "phone recharge"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 4396, \"category\": \"bills\", \"item\": \"phone recharge\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Drop Rohan a note saying I will be late",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Rohan",
+        "message": "I will be late"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Rohan\", \"message\": \"I will be late\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Remind me to back up my laptop on 25 December",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "back up my laptop",
+        "when": "on 25 December"
+      },
+      "pred_raw": "{\"intent\": \"set_reminder\", \"task\": \"back up my laptop\", \"when\": \"on 25 December\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "WhatsApp Rohan - the meeting is moved to 4",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Rohan",
+        "message": "the meeting is moved to 4"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Rohan\", \"message\": \"the meeting is moved to 4\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Paid ₹1260 for doctor visit just now",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 1260,
+        "category": "health",
+        "item": "doctor visit"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 1260, \"category\": \"health\", \"item\": \"doctor visit\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "drop rohan a note saying call me when free",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Rohan",
+        "message": "call me when free"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Rohan\", \"message\": \"call me when free\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Tell Priya happy birthday",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Priya",
+        "message": "happy birthday"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Priya\", \"message\": \"happy birthday\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "Drop Rohan a note saying call me when free",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Rohan",
+        "message": "call me when free"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Rohan\", \"message\": \"call me when free\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "log 4648 rs phone recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 4648,
+        "category": "bills",
+        "item": "phone recharge"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 4648, \"category\": \"bills\", \"item\": \"phone recharge\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "Tell Tanvi the meeting is moved to 4",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Tanvi",
+        "message": "the meeting is moved to 4"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Tanvi\", \"message\": \"the meeting is moved to 4\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "I spent 978.2 rupees on movie ticket",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 978.2,
+        "category": "entertainment",
+        "item": "movie ticket"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 978.2, \"category\": \"entertainment\", \"item\": \"movie ticket\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "WhatsApp Dev - happy birthday",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Dev",
+        "message": "happy birthday"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Dev\", \"message\": \"happy birthday\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "pizza cost me 1758 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 1758,
+        "category": "food",
+        "item": "pizza"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 1758, \"category\": \"food\", \"item\": \"pizza\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Drop Karan a note saying call me when free",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Karan",
+        "message": "call me when free"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Karan\", \"message\": \"call me when free\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "I need a nudge to back up my laptop on 25 December, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "back up my laptop",
+        "when": "on 25 December"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"I need a nudge to back up my laptop\", \"message\": \"on 25 December\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "I need a nudge to go to the gym next week, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "go to the gym",
+        "when": "next week"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"I need a nudge to go to the gym next week\", \"message\": \"please\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Add an expense of 992.9 for metro card recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 992.9,
+        "category": "transport",
+        "item": "metro card recharge"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 992.9, \"category\": \"transport\", \"item\": \"metro card recharge\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "Send a message to Naman: happy birthday",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Naman",
+        "message": "happy birthday"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Naman\", \"message\": \"happy birthday\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "i need a nudge to go to the gym next week, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "go to the gym",
+        "when": "next week"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"I need a nudge to go to the gym next week\", \"message\": \"please\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "coffee cost me 3817 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 3817,
+        "category": "food",
+        "item": "coffee"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 3817, \"category\": \"food\", \"item\": \"coffee\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Drop Priya a note saying happy birthday",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Priya",
+        "message": "happy birthday"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Priya\", \"message\": \"happy birthday\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Add an expense of 3005 for metro card recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 3005,
+        "category": "transport",
+        "item": "metro card recharge"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 3005, \"category\": \"transport\", \"item\": \"metro card recharge\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "Drop Harsh a note saying I reached home",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Harsh",
+        "message": "I reached home"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Harsh\", \"message\": \"I reached home\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Log 4673 rs notebook",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 4673,
+        "category": "stationery",
+        "item": "notebook"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 4673, \"category\": \"stationery\", \"item\": \"notebook\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "Tell Tanvi please send the notes",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Tanvi",
+        "message": "please send the notes"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Tanvi\", \"message\": \"please send the notes\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "whatsapp karan - i will be late",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Karan",
+        "message": "I will be late"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Karan\", \"message\": \"I will be late\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Drop Vikram a note saying the meeting is moved to 4",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Vikram",
+        "message": "the meeting is moved to 4"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Vikram\", \"message\": \"the meeting is moved to 4\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Add an expense of 729.1 for auto ride",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 729.1,
+        "category": "transport",
+        "item": "auto ride"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 729.1, \"category\": \"transport\", \"item\": \"auto ride\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "tonight at 8, remind me to prepare for the viva",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "prepare for the viva",
+        "when": "tonight at 8"
+      },
+      "pred_raw": "{\"intent\": \"set_reminder\", \"task\": \"prepare for the viva\", \"when\": \"tonight at 8\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "Paid ₹225.7 for phone recharge just now",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 225.7,
+        "category": "bills",
+        "item": "phone recharge"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 225.7, \"category\": \"bills\", \"item\": \"phone recharge\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "I spent 350.7 rupees on notebook",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 350.7,
+        "category": "stationery",
+        "item": "notebook"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 350.7, \"category\": \"stationery\", \"item\": \"notebook\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "movie ticket cost me 252 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 252,
+        "category": "entertainment",
+        "item": "movie ticket"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 252, \"category\": \"entertainment\", \"item\": \"movie ticket cost me 252 bucks\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Drop Vikram a note saying lunch at 1?",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Vikram",
+        "message": "lunch at 1?"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Vikram\", \"message\": \"lunch at 1?\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Don't let me forget to call the plumber on Friday evening",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "call the plumber",
+        "when": "on Friday evening"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"I don't want to forget to call the plumber\", \"message\": \"on Friday evening\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "metro card recharge cost me 1833 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 1833,
+        "category": "transport",
+        "item": "metro card recharge"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 1833, \"category\": \"transport\", \"item\": \"metro card recharge cost me 1833 bucks\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "WhatsApp Vikram - please send the notes",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Vikram",
+        "message": "please send the notes"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Vikram\", \"message\": \"please send the notes\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "notebook cost me 227.5 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 227.5,
+        "category": "stationery",
+        "item": "notebook"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 227.5, \"category\": \"stationery\", \"item\": \"notebook\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Don't let me forget to buy groceries next Monday at 10:30",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "buy groceries",
+        "when": "next Monday at 10:30"
+      },
+      "pred_raw": "{\"intent\": \"set_reminder\", \"task\": \"buy groceries\", \"when\": \"next Monday at 10:30\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Paid ₹2642 for notebook just now",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 2642,
+        "category": "stationery",
+        "item": "notebook"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 2642, \"category\": \"stationery\", \"item\": \"notebook\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Drop Sneha a note saying call me when free",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Sneha",
+        "message": "call me when free"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Sneha\", \"message\": \"call me when free\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "movie ticket cost me 1282 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 1282,
+        "category": "entertainment",
+        "item": "movie ticket"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 1282, \"category\": \"entertainment\", \"item\": \"movie ticket cost me 1282 bucks\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "whatsapp naman - happy birthday",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Naman",
+        "message": "happy birthday"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Naman\", \"message\": \"happy birthday\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "I need a nudge to pick up the parcel tonight at 8, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "pick up the parcel",
+        "when": "tonight at 8"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"I need a nudge to pick up the parcel\", \"message\": \"please\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Tell Rohan lunch at 1?",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Rohan",
+        "message": "lunch at 1?"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Rohan\", \"message\": \"lunch at 1?\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "I spent 4390 rupees on phone recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 4390,
+        "category": "bills",
+        "item": "phone recharge"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 4390, \"category\": \"bills\", \"item\": \"phone recharge\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "pizza cost me 3868 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 3868,
+        "category": "food",
+        "item": "pizza"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 3868, \"category\": \"food\", \"item\": \"pizza\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "I need a nudge to prepare for the viva in two hours, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "prepare for the viva",
+        "when": "in two hours"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"I need a nudge to prepare for the viva\", \"message\": \"in two hours, please\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "WhatsApp Karan - the files are uploaded",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Karan",
+        "message": "the files are uploaded"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Karan\", \"message\": \"the files are uploaded\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "Text Karan that the meeting is moved to 4",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Karan",
+        "message": "the meeting is moved to 4"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Karan\", \"message\": \"the meeting is moved to 4\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "I need a nudge to renew my passport next Monday at 10:30, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "renew my passport",
+        "when": "next Monday at 10:30"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"I need a nudge to renew my passport\", \"message\": \"next Monday at 10:30, please\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "whatsapp sneha - lunch at 1?",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Sneha",
+        "message": "lunch at 1?"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Sneha\", \"message\": \"lunch at 1?\"}",
+      "heldout_template": true,
+      "correct": true
+    },
+    {
+      "text": "I need a nudge to submit the assignment this Sunday morning, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "submit the assignment",
+        "when": "this Sunday morning"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"I need a nudge to submit the assignment this Sunday morning, please\"}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Add an expense of 4450 for coffee",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 4450,
+        "category": "food",
+        "item": "coffee"
+      },
+      "pred_raw": "{\"intent\": \"add_expense\", \"amount\": 4450, \"category\": \"food\", \"item\": \"coffee\"}",
+      "heldout_template": false,
+      "correct": true
+    },
+    {
+      "text": "Text Vikram that please send the notes",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Vikram",
+        "message": "please send the notes"
+      },
+      "pred_raw": "{\"intent\": \"send_message\", \"recipient\": \"Vikram\", \"message\": \"please send the notes\"}",
+      "heldout_template": false,
+      "correct": true
+    }
+  ]
+}

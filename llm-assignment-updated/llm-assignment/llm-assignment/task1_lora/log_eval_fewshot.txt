@@ -1,0 +1,12 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<01:57,  2.47it/s]Loading weights:  55%|█████▍    | 159/290 [00:00<00:00, 410.82it/s]Loading weights:  86%|████████▌ | 250/290 [00:00<00:00, 455.43it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 385.65it/s]
+{
+  "mode": "fewshot",
+  "n": 100,
+  "valid_json": 1.0,
+  "exact_match": 0.16,
+  "field_acc": 0.3716666666666667,
+  "exact_match_seen_templates": 0.24324324324324326,
+  "exact_match_heldout_templates": 0.1111111111111111
+}
+failures to inspect: ['i spent 2506 rupees on phone recharge', 'metro card recharge cost me 697.0 bucks', 'Paid ₹227 for movie ticket just now', 'log 858.7 rs metro card recharge', 'Add an expense of 869.0 for phone recharge']

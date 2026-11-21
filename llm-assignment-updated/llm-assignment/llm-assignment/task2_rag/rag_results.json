@@ -1,0 +1,186 @@
+{
+  "100": {
+    "n_chunks": 387,
+    "recall@1": 0.3333333333333333,
+    "recall@3": 0.5333333333333333,
+    "recall@5": 0.6,
+    "failures": [
+      {
+        "question": "How many tokens was Llama 2 pretrained on, and why did they pick that amount?",
+        "gold_page": 5,
+        "top3": [
+          {
+            "page": 47,
+            "score": 0.743,
+            "text": "original Llama team who helped get this work started. \u2022Drew Hamlin, Chantal Mora, and Aran Mun, who gave us some design input on the figures in the paper. \u2022Vijai Mohan for the discussions about RLHF t"
+          },
+          {
+            "page": 6,
+            "score": 0.71,
+            "text": "online data7B 4k \u2717 2.0T 3.0\u00d710\u22124 13B 4k \u2717 2.0T 3.0\u00d710\u22124 34B 4k \u2713 2.0T 1.5\u00d710\u22124 70B 4k \u2713 2.0T 1.5\u00d710\u22124 Table 1: Llama 2 family of models. Token counts refer to pretraining data only. All models are tra"
+          },
+          {
+            "page": 6,
+            "score": 0.705,
+            "text": "Training Loss for Llama 2 models. We compare the training loss of the Llama 2 family of models. We observe that after pretraining on 2T Tokens, the models still did not show any sign of saturation. To"
+          }
+        ]
+      },
+      {
+        "question": "What did Meta change compared with Llama 1, and which Llama 2 model sizes were released?",
+        "gold_page": 4,
+        "top3": [
+          {
+            "page": 77,
+            "score": 0.768,
+            "text": "that summarizes details of the models. Model Details Model Developers Meta AI Variations Llama 2 comes in a range of parameter sizes\u20147B, 13B, and 70B\u2014as well as pretrained and fine-tuned variations. I"
+          },
+          {
+            "page": 8,
+            "score": 0.725,
+            "text": "evaluate on the English tasks and report the average. As shown in Table 3, Llama 2 models outperform Llama 1 models. In particular, Llama 2 70B improves the resultsonMMLUandBBHby \u22485and\u22488points,respect"
+          },
+          {
+            "page": 4,
+            "score": 0.716,
+            "text": "\u2021https://ai.meta.com/resources/models-and-libraries/llama/ \u00a7We are delaying the release of the 34B model due to a lack of time to sufficiently red team. \u00b6https://ai.meta.com/llama \u2016https://github.com/"
+          }
+        ]
+      },
+      {
+        "question": "Why did the team stop collecting supervised fine-tuning data, and how many examples did they end up with?",
+        "gold_page": 9,
+        "top3": [
+          {
+            "page": 77,
+            "score": 0.66,
+            "text": "A100-80GB (TDP of 350-400W). Estimated total emissions were 539 tCO 2eq, 100% of which were offset by Meta\u2019s sustainability program. Training Data (Sections 2.1 and 3) Overview Llama 2 was pretrained "
+          },
+          {
+            "page": 24,
+            "score": 0.659,
+            "text": "AtensionbetweenhelpfulnessandsafetyofLLMshasbeenobservedin previous studies (Bai et al., 2022a). To better understand how the addition of safety training data affects general model performance, especi"
+          },
+          {
+            "page": 29,
+            "score": 0.65,
+            "text": "Some examples of useful insights provided by members of red teams that we were able to improve upon throughout development: \u2022[Early models] were more likely to have generated unsafe responses without "
+          }
+        ]
+      },
+      {
+        "question": "Why does Llama 2-Chat use two reward models instead of a single one?",
+        "gold_page": 10,
+        "top3": [
+          {
+            "page": 10,
+            "score": 0.822,
+            "text": "on a weekly basis. As we collected more preference data, our reward models improved, and we were able to train progressively better versions for Llama 2-Chat (see theresultsinSection5,Figure20). Llama"
+          },
+          {
+            "page": 13,
+            "score": 0.817,
+            "text": "(see the detailsonvolumeperbatchinTable26). Figure6reportsthesetrends,showingtheexpectedresultthatlarger models obtain higher performance for a similar volume of data. More importantly, the scaling pe"
+          },
+          {
+            "page": 32,
+            "score": 0.808,
+            "text": "Here, we discuss the interesting properties we have observed with RLHF (Section 5.1). We then discuss the limitations of Llama 2-Chat (Section 5.2). Lastly, we present our strategy for responsibly rel"
+          }
+        ]
+      },
+      {
+        "question": "What batch size, mini-batch size and clip threshold were used in each PPO iteration?",
+        "gold_page": 15,
+        "top3": [
+          {
+            "page": 15,
+            "score": 0.715,
+            "text": "\u03b22= 0.95,eps= 10\u22125. Weuseaweightdecayof 0.1,gradientclippingof 1.0,andaconstantlearningrateof 10\u22126. Foreach PPOiterationweuseabatchsizeof 512,aPPOclipthresholdof 0.2,amini-batchsizeof 64,andtakeone gr"
+          },
+          {
+            "page": 47,
+            "score": 0.681,
+            "text": "as it works only when batch sizes are larger than the number of shards and the additional communication cost is not worth it in all cases. Context NarrativeQA Qasper QuALITY QMSum ContractNLI SQuAD Le"
+          },
+          {
+            "page": 12,
+            "score": 0.677,
+            "text": "over the training data. In earlier experiments, we found that traininglongercanleadtoover-fitting. Weusethesameoptimizerparametersasforthebasemodel. The maximum learning rate is 5\u00d710\u22126for the 70B para"
+          }
+        ]
+      },
+      {
+        "question": "Who took part in red teaming the models, and how many people were involved?",
+        "gold_page": 28,
+        "top3": [
+          {
+            "page": 28,
+            "score": 0.709,
+            "text": "allow us to recognize and target specific patterns in a more comprehensive way. We conducted a series of red teaming with various groups of internal employees, contract workers, and externalvendors. T"
+          },
+          {
+            "page": 46,
+            "score": 0.657,
+            "text": "tuned model performance, as well as internal leads who organized annotations and quality control: Eric Alamillo, Tamara Best, Debanjali Bose, Adam Kelsey, Meghan Keneally, Rebecca Kogen, Catalina Meji"
+          },
+          {
+            "page": 29,
+            "score": 0.64,
+            "text": "\u03b3, with respect to a red teaming exercise executed by a set of experts as the average number of created prompts that would triggeraviolatingresponsefromthemodelperpersonperhour. Asanexample,onour7Bmod"
+          }
+        ]
+      }
+    ]
+  },
+  "300": {
+    "n_chunks": 129,
+    "recall@1": 0.6,
+    "recall@3": 0.7333333333333333,
+    "recall@5": 0.8666666666666667,
+    "failures": [
+      {
+        "question": "How many tokens was Llama 2 pretrained on, and why did they pick that amount?",
+        "gold_page": 5,
+        "top3": [
+          {
+            "page": 6,
+            "score": 0.71,
+            "text": "online data7B 4k \u2717 2.0T 3.0\u00d710\u22124 13B 4k \u2717 2.0T 3.0\u00d710\u22124 34B 4k \u2713 2.0T 1.5\u00d710\u22124 70B 4k \u2713 2.0T 1.5\u00d710\u22124 Table 1: Llama 2 family of models. Token counts refer to pretraining data only. All models are tra"
+          },
+          {
+            "page": 77,
+            "score": 0.679,
+            "text": "A100-80GB (TDP of 350-400W). Estimated total emissions were 539 tCO 2eq, 100% of which were offset by Meta\u2019s sustainability program. Training Data (Sections 2.1 and 3) Overview Llama 2 was pretrained "
+          },
+          {
+            "page": 46,
+            "score": 0.664,
+            "text": "Shajnfeld, Beau James, Helen Suk, Britt Montalvo, Allie Vieth and Polina Zvyagina, who helped guide us through the release. \u2022Our partnerships team including Ash Jhaveri, Alex Boesenberg, Sy Choudhury,"
+          }
+        ]
+      },
+      {
+        "question": "Why did the team stop collecting supervised fine-tuning data, and how many examples did they end up with?",
+        "gold_page": 9,
+        "top3": [
+          {
+            "page": 77,
+            "score": 0.642,
+            "text": "A100-80GB (TDP of 350-400W). Estimated total emissions were 539 tCO 2eq, 100% of which were offset by Meta\u2019s sustainability program. Training Data (Sections 2.1 and 3) Overview Llama 2 was pretrained "
+          },
+          {
+            "page": 22,
+            "score": 0.633,
+            "text": "is still needed. In Appendix A.4.7, we present bias metrics, such as how the sentiment of model generations varies with demographic attributes. We note an increase in positive sentiment overall for ma"
+          },
+          {
+            "page": 23,
+            "score": 0.63,
+            "text": "will amplify their potential for positive impact on these important social issues. 4.2 Safety Fine-Tuning In this section, we describe our approach to safety fine-tuning, including safety categories, "
+          }
+        ]
+      }
+    ]
+  }
+}

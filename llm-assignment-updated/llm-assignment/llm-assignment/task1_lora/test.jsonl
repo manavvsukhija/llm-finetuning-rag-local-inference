@@ -1,0 +1,100 @@
+{"text": "i spent 2506 rupees on phone recharge", "target": "{\"intent\": \"add_expense\", \"amount\": 2506, \"category\": \"bills\", \"item\": \"phone recharge\"}", "heldout_template": false}
+{"text": "metro card recharge cost me 697.0 bucks", "target": "{\"intent\": \"add_expense\", \"amount\": 697.0, \"category\": \"transport\", \"item\": \"metro card recharge\"}", "heldout_template": true}
+{"text": "Paid ₹227 for movie ticket just now", "target": "{\"intent\": \"add_expense\", \"amount\": 227, \"category\": \"entertainment\", \"item\": \"movie ticket\"}", "heldout_template": true}
+{"text": "log 858.7 rs metro card recharge", "target": "{\"intent\": \"add_expense\", \"amount\": 858.7, \"category\": \"transport\", \"item\": \"metro card recharge\"}", "heldout_template": false}
+{"text": "I spent 4286 rupees on movie ticket", "target": "{\"intent\": \"add_expense\", \"amount\": 4286, \"category\": \"entertainment\", \"item\": \"movie ticket\"}", "heldout_template": false}
+{"text": "Can you remind me to call the plumber tomorrow at 9 am?", "target": "{\"intent\": \"set_reminder\", \"task\": \"call the plumber\", \"when\": \"tomorrow at 9 am\"}", "heldout_template": false}
+{"text": "Add an expense of 869.0 for phone recharge", "target": "{\"intent\": \"add_expense\", \"amount\": 869.0, \"category\": \"bills\", \"item\": \"phone recharge\"}", "heldout_template": false}
+{"text": "WhatsApp Priya - please send the notes", "target": "{\"intent\": \"send_message\", \"recipient\": \"Priya\", \"message\": \"please send the notes\"}", "heldout_template": true}
+{"text": "Add an expense of 542.0 for metro card recharge", "target": "{\"intent\": \"add_expense\", \"amount\": 542.0, \"category\": \"transport\", \"item\": \"metro card recharge\"}", "heldout_template": false}
+{"text": "Drop Isha a note saying I will be late", "target": "{\"intent\": \"send_message\", \"recipient\": \"Isha\", \"message\": \"I will be late\"}", "heldout_template": true}
+{"text": "doctor visit cost me 4733 bucks", "target": "{\"intent\": \"add_expense\", \"amount\": 4733, \"category\": \"health\", \"item\": \"doctor visit\"}", "heldout_template": true}
+{"text": "Paid ₹410.4 for movie ticket just now", "target": "{\"intent\": \"add_expense\", \"amount\": 410.4, \"category\": \"entertainment\", \"item\": \"movie ticket\"}", "heldout_template": true}
+{"text": "Paid ₹158.9 for textbook just now", "target": "{\"intent\": \"add_expense\", \"amount\": 158.9, \"category\": \"education\", \"item\": \"textbook\"}", "heldout_template": true}
+{"text": "headphones cost me 4846 bucks", "target": "{\"intent\": \"add_expense\", \"amount\": 4846, \"category\": \"shopping\", \"item\": \"headphones\"}", "heldout_template": true}
+{"text": "phone recharge cost me 762.0 bucks", "target": "{\"intent\": \"add_expense\", \"amount\": 762.0, \"category\": \"bills\", \"item\": \"phone recharge\"}", "heldout_template": true}
+{"text": "phone recharge cost me 998 bucks", "target": "{\"intent\": \"add_expense\", \"amount\": 998, \"category\": \"bills\", \"item\": \"phone recharge\"}", "heldout_template": true}
+{"text": "tonight at 8, remind me to pick up the parcel", "target": "{\"intent\": \"set_reminder\", \"task\": \"pick up the parcel\", \"when\": \"tonight at 8\"}", "heldout_template": false}
+{"text": "I need a nudge to pay the electricity bill on Friday evening, please", "target": "{\"intent\": \"set_reminder\", \"task\": \"pay the electricity bill\", \"when\": \"on Friday evening\"}", "heldout_template": true}
+{"text": "Add an expense of 4672 for doctor visit", "target": "{\"intent\": \"add_expense\", \"amount\": 4672, \"category\": \"health\", \"item\": \"doctor visit\"}", "heldout_template": false}
+{"text": "doctor visit cost me 3733 bucks", "target": "{\"intent\": \"add_expense\", \"amount\": 3733, \"category\": \"health\", \"item\": \"doctor visit\"}", "heldout_template": true}
+{"text": "Add an expense of 1550 for auto ride", "target": "{\"intent\": \"add_expense\", \"amount\": 1550, \"category\": \"transport\", \"item\": \"auto ride\"}", "heldout_template": false}
+{"text": "log 419.3 rs doctor visit", "target": "{\"intent\": \"add_expense\", \"amount\": 419.3, \"category\": \"health\", \"item\": \"doctor visit\"}", "heldout_template": false}
+{"text": "Log 3658 rs doctor visit", "target": "{\"intent\": \"add_expense\", \"amount\": 3658, \"category\": \"health\", \"item\": \"doctor visit\"}", "heldout_template": false}
+{"text": "I spent 158.1 rupees on coffee", "target": "{\"intent\": \"add_expense\", \"amount\": 158.1, \"category\": \"food\", \"item\": \"coffee\"}", "heldout_template": false}
+{"text": "pizza cost me 3633 bucks", "target": "{\"intent\": \"add_expense\", \"amount\": 3633, \"category\": \"food\", \"item\": \"pizza\"}", "heldout_template": true}
+{"text": "I need a nudge to back up my laptop at 6 pm today, please", "target": "{\"intent\": \"set_reminder\", \"task\": \"back up my laptop\", \"when\": \"at 6 pm today\"}", "heldout_template": true}
+{"text": "Don't let me forget to prepare for the viva in two hours", "target": "{\"intent\": \"set_reminder\", \"task\": \"prepare for the viva\", \"when\": \"in two hours\"}", "heldout_template": true}
+{"text": "Paid ₹1734 for doctor visit just now", "target": "{\"intent\": \"add_expense\", \"amount\": 1734, \"category\": \"health\", \"item\": \"doctor visit\"}", "heldout_template": true}
+{"text": "Add an expense of 1065 for auto ride", "target": "{\"intent\": \"add_expense\", \"amount\": 1065, \"category\": \"transport\", \"item\": \"auto ride\"}", "heldout_template": false}
+{"text": "pizza cost me 2845 bucks", "target": "{\"intent\": \"add_expense\", \"amount\": 2845, \"category\": \"food\", \"item\": \"pizza\"}", "heldout_template": true}
+{"text": "Add an expense of 3650 for metro card recharge", "target": "{\"intent\": \"add_expense\", \"amount\": 3650, \"category\": \"transport\", \"item\": \"metro card recharge\"}", "heldout_template": false}
+{"text": "movie ticket cost me 3668 bucks", "target": "{\"intent\": \"add_expense\", \"amount\": 3668, \"category\": \"entertainment\", \"item\": \"movie ticket\"}", "heldout_template": true}
+{"text": "Log 2814 rs movie ticket", "target": "{\"intent\": \"add_expense\", \"amount\": 2814, \"category\": \"entertainment\", \"item\": \"movie ticket\"}", "heldout_template": false}
+{"text": "Drop Meera a note saying lunch at 1?", "target": "{\"intent\": \"send_message\", \"recipient\": \"Meera\", \"message\": \"lunch at 1?\"}", "heldout_template": true}
+{"text": "Drop Karan a note saying lunch at 1?", "target": "{\"intent\": \"send_message\", \"recipient\": \"Karan\", \"message\": \"lunch at 1?\"}", "heldout_template": true}
+{"text": "Add an expense of 681.4 for phone recharge", "target": "{\"intent\": \"add_expense\", \"amount\": 681.4, \"category\": \"bills\", \"item\": \"phone recharge\"}", "heldout_template": false}
+{"text": "Add an expense of 673.9 for coffee", "target": "{\"intent\": \"add_expense\", \"amount\": 673.9, \"category\": \"food\", \"item\": \"coffee\"}", "heldout_template": false}
+{"text": "Don't let me forget to email the report this Sunday morning", "target": "{\"intent\": \"set_reminder\", \"task\": \"email the report\", \"when\": \"this Sunday morning\"}", "heldout_template": true}
+{"text": "WhatsApp Karan - lunch at 1?", "target": "{\"intent\": \"send_message\", \"recipient\": \"Karan\", \"message\": \"lunch at 1?\"}", "heldout_template": true}
+{"text": "I need a nudge to email the report at 6 pm today, please", "target": "{\"intent\": \"set_reminder\", \"task\": \"email the report\", \"when\": \"at 6 pm today\"}", "heldout_template": true}
+{"text": "Don't let me forget to email the report tomorrow at 9 am", "target": "{\"intent\": \"set_reminder\", \"task\": \"email the report\", \"when\": \"tomorrow at 9 am\"}", "heldout_template": true}
+{"text": "Set a reminder: back up my laptop in two hours", "target": "{\"intent\": \"set_reminder\", \"task\": \"back up my laptop\", \"when\": \"in two hours\"}", "heldout_template": false}
+{"text": "Can you remind me to back up my laptop on Friday evening?", "target": "{\"intent\": \"set_reminder\", \"task\": \"back up my laptop\", \"when\": \"on Friday evening\"}", "heldout_template": false}
+{"text": "I need a nudge to water the plants at 6 pm today, please", "target": "{\"intent\": \"set_reminder\", \"task\": \"water the plants\", \"when\": \"at 6 pm today\"}", "heldout_template": true}
+{"text": "Don't let me forget to book train tickets on 25 December", "target": "{\"intent\": \"set_reminder\", \"task\": \"book train tickets\", \"when\": \"on 25 December\"}", "heldout_template": true}
+{"text": "don't let me forget to email the report tomorrow at 9 am", "target": "{\"intent\": \"set_reminder\", \"task\": \"email the report\", \"when\": \"tomorrow at 9 am\"}", "heldout_template": true}
+{"text": "Paid ₹4396 for phone recharge just now", "target": "{\"intent\": \"add_expense\", \"amount\": 4396, \"category\": \"bills\", \"item\": \"phone recharge\"}", "heldout_template": true}
+{"text": "Drop Rohan a note saying I will be late", "target": "{\"intent\": \"send_message\", \"recipient\": \"Rohan\", \"message\": \"I will be late\"}", "heldout_template": true}
+{"text": "Remind me to back up my laptop on 25 December", "target": "{\"intent\": \"set_reminder\", \"task\": \"back up my laptop\", \"when\": \"on 25 December\"}", "heldout_template": false}
+{"text": "WhatsApp Rohan - the meeting is moved to 4", "target": "{\"intent\": \"send_message\", \"recipient\": \"Rohan\", \"message\": \"the meeting is moved to 4\"}", "heldout_template": true}
+{"text": "Paid ₹1260 for doctor visit just now", "target": "{\"intent\": \"add_expense\", \"amount\": 1260, \"category\": \"health\", \"item\": \"doctor visit\"}", "heldout_template": true}
+{"text": "drop rohan a note saying call me when free", "target": "{\"intent\": \"send_message\", \"recipient\": \"Rohan\", \"message\": \"call me when free\"}", "heldout_template": true}
+{"text": "Tell Priya happy birthday", "target": "{\"intent\": \"send_message\", \"recipient\": \"Priya\", \"message\": \"happy birthday\"}", "heldout_template": false}
+{"text": "Drop Rohan a note saying call me when free", "target": "{\"intent\": \"send_message\", \"recipient\": \"Rohan\", \"message\": \"call me when free\"}", "heldout_template": true}
+{"text": "log 4648 rs phone recharge", "target": "{\"intent\": \"add_expense\", \"amount\": 4648, \"category\": \"bills\", \"item\": \"phone recharge\"}", "heldout_template": false}
+{"text": "Tell Tanvi the meeting is moved to 4", "target": "{\"intent\": \"send_message\", \"recipient\": \"Tanvi\", \"message\": \"the meeting is moved to 4\"}", "heldout_template": false}
+{"text": "I spent 978.2 rupees on movie ticket", "target": "{\"intent\": \"add_expense\", \"amount\": 978.2, \"category\": \"entertainment\", \"item\": \"movie ticket\"}", "heldout_template": false}
+{"text": "WhatsApp Dev - happy birthday", "target": "{\"intent\": \"send_message\", \"recipient\": \"Dev\", \"message\": \"happy birthday\"}", "heldout_template": true}
+{"text": "pizza cost me 1758 bucks", "target": "{\"intent\": \"add_expense\", \"amount\": 1758, \"category\": \"food\", \"item\": \"pizza\"}", "heldout_template": true}
+{"text": "Drop Karan a note saying call me when free", "target": "{\"intent\": \"send_message\", \"recipient\": \"Karan\", \"message\": \"call me when free\"}", "heldout_template": true}
+{"text": "I need a nudge to back up my laptop on 25 December, please", "target": "{\"intent\": \"set_reminder\", \"task\": \"back up my laptop\", \"when\": \"on 25 December\"}", "heldout_template": true}
+{"text": "I need a nudge to go to the gym next week, please", "target": "{\"intent\": \"set_reminder\", \"task\": \"go to the gym\", \"when\": \"next week\"}", "heldout_template": true}
+{"text": "Add an expense of 992.9 for metro card recharge", "target": "{\"intent\": \"add_expense\", \"amount\": 992.9, \"category\": \"transport\", \"item\": \"metro card recharge\"}", "heldout_template": false}
+{"text": "Send a message to Naman: happy birthday", "target": "{\"intent\": \"send_message\", \"recipient\": \"Naman\", \"message\": \"happy birthday\"}", "heldout_template": false}
+{"text": "i need a nudge to go to the gym next week, please", "target": "{\"intent\": \"set_reminder\", \"task\": \"go to the gym\", \"when\": \"next week\"}", "heldout_template": true}
+{"text": "coffee cost me 3817 bucks", "target": "{\"intent\": \"add_expense\", \"amount\": 3817, \"category\": \"food\", \"item\": \"coffee\"}", "heldout_template": true}
+{"text": "Drop Priya a note saying happy birthday", "target": "{\"intent\": \"send_message\", \"recipient\": \"Priya\", \"message\": \"happy birthday\"}", "heldout_template": true}
+{"text": "Add an expense of 3005 for metro card recharge", "target": "{\"intent\": \"add_expense\", \"amount\": 3005, \"category\": \"transport\", \"item\": \"metro card recharge\"}", "heldout_template": false}
+{"text": "Drop Harsh a note saying I reached home", "target": "{\"intent\": \"send_message\", \"recipient\": \"Harsh\", \"message\": \"I reached home\"}", "heldout_template": true}
+{"text": "Log 4673 rs notebook", "target": "{\"intent\": \"add_expense\", \"amount\": 4673, \"category\": \"stationery\", \"item\": \"notebook\"}", "heldout_template": false}
+{"text": "Tell Tanvi please send the notes", "target": "{\"intent\": \"send_message\", \"recipient\": \"Tanvi\", \"message\": \"please send the notes\"}", "heldout_template": false}
+{"text": "whatsapp karan - i will be late", "target": "{\"intent\": \"send_message\", \"recipient\": \"Karan\", \"message\": \"I will be late\"}", "heldout_template": true}
+{"text": "Drop Vikram a note saying the meeting is moved to 4", "target": "{\"intent\": \"send_message\", \"recipient\": \"Vikram\", \"message\": \"the meeting is moved to 4\"}", "heldout_template": true}
+{"text": "Add an expense of 729.1 for auto ride", "target": "{\"intent\": \"add_expense\", \"amount\": 729.1, \"category\": \"transport\", \"item\": \"auto ride\"}", "heldout_template": false}
+{"text": "tonight at 8, remind me to prepare for the viva", "target": "{\"intent\": \"set_reminder\", \"task\": \"prepare for the viva\", \"when\": \"tonight at 8\"}", "heldout_template": false}
+{"text": "Paid ₹225.7 for phone recharge just now", "target": "{\"intent\": \"add_expense\", \"amount\": 225.7, \"category\": \"bills\", \"item\": \"phone recharge\"}", "heldout_template": true}
+{"text": "I spent 350.7 rupees on notebook", "target": "{\"intent\": \"add_expense\", \"amount\": 350.7, \"category\": \"stationery\", \"item\": \"notebook\"}", "heldout_template": false}
+{"text": "movie ticket cost me 252 bucks", "target": "{\"intent\": \"add_expense\", \"amount\": 252, \"category\": \"entertainment\", \"item\": \"movie ticket\"}", "heldout_template": true}
+{"text": "Drop Vikram a note saying lunch at 1?", "target": "{\"intent\": \"send_message\", \"recipient\": \"Vikram\", \"message\": \"lunch at 1?\"}", "heldout_template": true}
+{"text": "Don't let me forget to call the plumber on Friday evening", "target": "{\"intent\": \"set_reminder\", \"task\": \"call the plumber\", \"when\": \"on Friday evening\"}", "heldout_template": true}
+{"text": "metro card recharge cost me 1833 bucks", "target": "{\"intent\": \"add_expense\", \"amount\": 1833, \"category\": \"transport\", \"item\": \"metro card recharge\"}", "heldout_template": true}
+{"text": "WhatsApp Vikram - please send the notes", "target": "{\"intent\": \"send_message\", \"recipient\": \"Vikram\", \"message\": \"please send the notes\"}", "heldout_template": true}
+{"text": "notebook cost me 227.5 bucks", "target": "{\"intent\": \"add_expense\", \"amount\": 227.5, \"category\": \"stationery\", \"item\": \"notebook\"}", "heldout_template": true}
+{"text": "Don't let me forget to buy groceries next Monday at 10:30", "target": "{\"intent\": \"set_reminder\", \"task\": \"buy groceries\", \"when\": \"next Monday at 10:30\"}", "heldout_template": true}
+{"text": "Paid ₹2642 for notebook just now", "target": "{\"intent\": \"add_expense\", \"amount\": 2642, \"category\": \"stationery\", \"item\": \"notebook\"}", "heldout_template": true}
+{"text": "Drop Sneha a note saying call me when free", "target": "{\"intent\": \"send_message\", \"recipient\": \"Sneha\", \"message\": \"call me when free\"}", "heldout_template": true}
+{"text": "movie ticket cost me 1282 bucks", "target": "{\"intent\": \"add_expense\", \"amount\": 1282, \"category\": \"entertainment\", \"item\": \"movie ticket\"}", "heldout_template": true}
+{"text": "whatsapp naman - happy birthday", "target": "{\"intent\": \"send_message\", \"recipient\": \"Naman\", \"message\": \"happy birthday\"}", "heldout_template": true}
+{"text": "I need a nudge to pick up the parcel tonight at 8, please", "target": "{\"intent\": \"set_reminder\", \"task\": \"pick up the parcel\", \"when\": \"tonight at 8\"}", "heldout_template": true}
+{"text": "Tell Rohan lunch at 1?", "target": "{\"intent\": \"send_message\", \"recipient\": \"Rohan\", \"message\": \"lunch at 1?\"}", "heldout_template": false}
+{"text": "I spent 4390 rupees on phone recharge", "target": "{\"intent\": \"add_expense\", \"amount\": 4390, \"category\": \"bills\", \"item\": \"phone recharge\"}", "heldout_template": false}
+{"text": "pizza cost me 3868 bucks", "target": "{\"intent\": \"add_expense\", \"amount\": 3868, \"category\": \"food\", \"item\": \"pizza\"}", "heldout_template": true}
+{"text": "I need a nudge to prepare for the viva in two hours, please", "target": "{\"intent\": \"set_reminder\", \"task\": \"prepare for the viva\", \"when\": \"in two hours\"}", "heldout_template": true}
+{"text": "WhatsApp Karan - the files are uploaded", "target": "{\"intent\": \"send_message\", \"recipient\": \"Karan\", \"message\": \"the files are uploaded\"}", "heldout_template": true}
+{"text": "Text Karan that the meeting is moved to 4", "target": "{\"intent\": \"send_message\", \"recipient\": \"Karan\", \"message\": \"the meeting is moved to 4\"}", "heldout_template": false}
+{"text": "I need a nudge to renew my passport next Monday at 10:30, please", "target": "{\"intent\": \"set_reminder\", \"task\": \"renew my passport\", \"when\": \"next Monday at 10:30\"}", "heldout_template": true}
+{"text": "whatsapp sneha - lunch at 1?", "target": "{\"intent\": \"send_message\", \"recipient\": \"Sneha\", \"message\": \"lunch at 1?\"}", "heldout_template": true}
+{"text": "I need a nudge to submit the assignment this Sunday morning, please", "target": "{\"intent\": \"set_reminder\", \"task\": \"submit the assignment\", \"when\": \"this Sunday morning\"}", "heldout_template": true}
+{"text": "Add an expense of 4450 for coffee", "target": "{\"intent\": \"add_expense\", \"amount\": 4450, \"category\": \"food\", \"item\": \"coffee\"}", "heldout_template": false}
+{"text": "Text Vikram that please send the notes", "target": "{\"intent\": \"send_message\", \"recipient\": \"Vikram\", \"message\": \"please send the notes\"}", "heldout_template": false}

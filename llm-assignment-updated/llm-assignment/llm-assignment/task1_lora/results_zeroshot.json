@@ -1,0 +1,1161 @@
+{
+  "metrics": {
+    "mode": "zeroshot",
+    "n": 100,
+    "valid_json": 0.06,
+    "exact_match": 0.0,
+    "field_acc": 0.0,
+    "exact_match_seen_templates": 0.0,
+    "exact_match_heldout_templates": 0.0
+  },
+  "predictions": [
+    {
+      "text": "i spent 2506 rupees on phone recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 2506,
+        "category": "bills",
+        "item": "phone recharge"
+      },
+      "pred_raw": "```json\n{\n    \"transaction\": {\n        \"amount\": 2506,\n        \"currency\": \"INR\"\n    },\n    \"details\": [\n        {\n            \"item\": \"Phone\",\n            \"quantity\": 1,\n            \"price_per_unit\": 3000\n        }\n    ]\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "metro card recharge cost me 697.0 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 697.0,
+        "category": "transport",
+        "item": "metro card recharge"
+      },
+      "pred_raw": "```json\n{\n    \"currency\": \"USD\",\n    \"amount\": 697,\n    \"description\": \"Metro Card Recharge\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Paid ₹227 for movie ticket just now",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 227,
+        "category": "entertainment",
+        "item": "movie ticket"
+      },
+      "pred_raw": "```json\n{\n  \"movie\": {\n    \"title\": \"The Shawshank Redemption\",\n    \"year\": 1994,\n    \"rating\": \"PG-13\"\n  },\n  \"ticket_price\": 227\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "log 858.7 rs metro card recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 858.7,
+        "category": "transport",
+        "item": "metro card recharge"
+      },
+      "pred_raw": "```json\n{\n    \"amount\": 100,\n    \"currency\": \"USD\",\n    \"card_type\": \"Metro Card\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "I spent 4286 rupees on movie ticket",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 4286,
+        "category": "entertainment",
+        "item": "movie ticket"
+      },
+      "pred_raw": "```json\n{\n    \"movie\": \"The Shawshank Redemption\",\n    \"rating\": \"PG-13\",\n    \"release_date\": \"1994-07-15\",\n    \"actors\": [\"Tim Robbins\", \"Morgan Freeman\"],\n    \"director\": \"Frank Darabont\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "Can you remind me to call the plumber tomorrow at 9 am?",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "call the plumber",
+        "when": "tomorrow at 9 am"
+      },
+      "pred_raw": "```json\n{\n    \"message\": \"Reminder: Call the plumber tomorrow at 9 am.\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "Add an expense of 869.0 for phone recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 869.0,
+        "category": "bills",
+        "item": "phone recharge"
+      },
+      "pred_raw": "```json\n{\n    \"amount\": 869.0,\n    \"description\": \"Phone Recharge\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "WhatsApp Priya - please send the notes",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Priya",
+        "message": "please send the notes"
+      },
+      "pred_raw": "```json\n{\n  \"subject\": \"Request for WhatsApp Notes\",\n  \"body\": \"Hi Priya, I need some notes on a specific topic. Please provide them as soon as possible.\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Add an expense of 542.0 for metro card recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 542.0,
+        "category": "transport",
+        "item": "metro card recharge"
+      },
+      "pred_raw": "```json\n{\n    \"amount\": 542.0,\n    \"card_type\": \"metro\",\n    \"currency\": \"USD\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "Drop Isha a note saying I will be late",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Isha",
+        "message": "I will be late"
+      },
+      "pred_raw": "```json\n{\n  \"message\": \"I'm sorry, but I need to drop you off at your home address. Please provide me with the address so that we can proceed.\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "doctor visit cost me 4733 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 4733,
+        "category": "health",
+        "item": "doctor visit"
+      },
+      "pred_raw": "{\n    \"patient\": {\n        \"name\": \"John Doe\",\n        \"age\": 50,\n        \"gender\": \"Male\"\n    },\n    \"doctor\": {\n        \"name\": \"Dr. Jane Smith\",\n        \"specialization\": \"General Medicine\",\n        \"cost_per_visit\": 299.99\n    }\n}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Paid ₹410.4 for movie ticket just now",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 410.4,
+        "category": "entertainment",
+        "item": "movie ticket"
+      },
+      "pred_raw": "```json\n{\n  \"movie\": {\n    \"title\": \"The Shawshank Redemption\",\n    \"year\": 1994,\n    \"rating\": \"PG-13\"\n  },\n  \"ticket_price\": 410.4\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Paid ₹158.9 for textbook just now",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 158.9,
+        "category": "education",
+        "item": "textbook"
+      },
+      "pred_raw": "```json\n{\n  \"book\": {\n    \"title\": \"Python Crash Course\",\n    \"author\": \"Eric Matthes\",\n    \"price\": 158.9,\n    \"availability\": \"Just Now\"\n  }\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "headphones cost me 4846 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 4846,
+        "category": "shopping",
+        "item": "headphones"
+      },
+      "pred_raw": "```json\n{\n    \"question\": \"What is the price of a pair of headphones?\",\n    \"answer\": \"4846\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "phone recharge cost me 762.0 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 762.0,
+        "category": "bills",
+        "item": "phone recharge"
+      },
+      "pred_raw": "```json\n{\n    \"amount\": 762,\n    \"currency\": \"USD\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "phone recharge cost me 998 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 998,
+        "category": "bills",
+        "item": "phone recharge"
+      },
+      "pred_raw": "```json\n{\n    \"amount\": 998,\n    \"currency\": \"USD\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "tonight at 8, remind me to pick up the parcel",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "pick up the parcel",
+        "when": "tonight at 8"
+      },
+      "pred_raw": "```json\n{\n    \"message\": \"Reminder: Pick up the parcel tonight at 8 PM\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "I need a nudge to pay the electricity bill on Friday evening, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "pay the electricity bill",
+        "when": "on Friday evening"
+      },
+      "pred_raw": "```json\n{\n  \"request\": {\n    \"date\": \"2023-10-15\",\n    \"amount\": \"$10.00\"\n  }\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Add an expense of 4672 for doctor visit",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 4672,
+        "category": "health",
+        "item": "doctor visit"
+      },
+      "pred_raw": "```json\n{\n    \"amount\": 4672,\n    \"category\": \"Doctor Visit\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "doctor visit cost me 3733 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 3733,
+        "category": "health",
+        "item": "doctor visit"
+      },
+      "pred_raw": "{\n    \"patient\": {\n        \"name\": \"John Doe\",\n        \"age\": 45,\n        \"gender\": \"Male\"\n    },\n    \"doctor\": {\n        \"name\": \"Dr. Jane Smith\",\n        \"specialization\": \"General Medicine\",\n        \"cost_per_visit\": 200\n    }\n}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Add an expense of 1550 for auto ride",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 1550,
+        "category": "transport",
+        "item": "auto ride"
+      },
+      "pred_raw": "```json\n{\n    \"amount\": 1550,\n    \"category\": \"Auto Ride\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "log 419.3 rs doctor visit",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 419.3,
+        "category": "health",
+        "item": "doctor visit"
+      },
+      "pred_raw": "```json\n{\n    \"error\": {\n        \"code\": 419,\n        \"message\": \"Patient already has a scheduled appointment with this provider\",\n        \"details\": [\n            {\n                \"provider_id\": \"4193\",\n                \"appointment_date\": \"2023-05-15\"\n            }\n        ]\n    },\n    \"status\": \"error\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "Log 3658 rs doctor visit",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 3658,
+        "category": "health",
+        "item": "doctor visit"
+      },
+      "pred_raw": "```json\n{\n    \"patient\": {\n        \"name\": \"John Doe\",\n        \"age\": 40,\n        \"gender\": \"Male\"\n    },\n    \"doctor\": {\n        \"name\": \"Dr. Jane Smith\",\n        \"specialization\": \"General Medicine\",\n        \"specialty\": \"Cardiology\"\n    },\n    \"visit_date\": \"2023-10-01T14:00:00Z\",\n    \"visit_time",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "I spent 158.1 rupees on coffee",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 158.1,
+        "category": "food",
+        "item": "coffee"
+      },
+      "pred_raw": "```json\n{\n    \"name\": \"coffee\",\n    \"price\": 158.1,\n    \"quantity\": 1\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "pizza cost me 3633 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 3633,
+        "category": "food",
+        "item": "pizza"
+      },
+      "pred_raw": "{\n    \"name\": \"pizza\",\n    \"price\": 3633,\n    \"description\": \"A delicious pizza\"\n}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "I need a nudge to back up my laptop at 6 pm today, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "back up my laptop",
+        "when": "at 6 pm today"
+      },
+      "pred_raw": "```json\n{\n    \"action\": \"back_up\",\n    \"date\": \"2023-10-05T18:00:00Z\",\n    \"time\": \"17:00\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Don't let me forget to prepare for the viva in two hours",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "prepare for the viva",
+        "when": "in two hours"
+      },
+      "pred_raw": "```json\n{\n  \"date\": \"2023-10-05\",\n  \"time\": \"14:00\",\n  \"location\": \"Online\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Paid ₹1734 for doctor visit just now",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 1734,
+        "category": "health",
+        "item": "doctor visit"
+      },
+      "pred_raw": "```json\n{\n  \"patient\": {\n    \"name\": \"John Doe\",\n    \"age\": 50,\n    \"gender\": \"Male\"\n  },\n  \"doctor\": {\n    \"name\": \"Dr. Jane Smith\",\n    \"specialization\": \"General Medicine\",\n    \"experience\": 20\n  }\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Add an expense of 1065 for auto ride",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 1065,
+        "category": "transport",
+        "item": "auto ride"
+      },
+      "pred_raw": "```json\n{\n    \"amount\": 1065,\n    \"category\": \"Auto Ride\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "pizza cost me 2845 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 2845,
+        "category": "food",
+        "item": "pizza"
+      },
+      "pred_raw": "{\n    \"name\": \"pizza\",\n    \"price\": 2845,\n    \"quantity\": 100,\n    \"unit\": \"pounds\"\n}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Add an expense of 3650 for metro card recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 3650,
+        "category": "transport",
+        "item": "metro card recharge"
+      },
+      "pred_raw": "```json\n{\n    \"amount\": 3650,\n    \"currency\": \"USD\",\n    \"description\": \"Expenses incurred from using the metro card\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "movie ticket cost me 3668 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 3668,
+        "category": "entertainment",
+        "item": "movie ticket"
+      },
+      "pred_raw": "```json\n{\n    \"ticket_price\": 3668,\n    \"total_cost\": 12000\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Log 2814 rs movie ticket",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 2814,
+        "category": "entertainment",
+        "item": "movie ticket"
+      },
+      "pred_raw": "```json\n{\n    \"movie\": {\n        \"title\": \"The Shawshank Redemption\",\n        \"year\": 1994,\n        \"rating\": \"PG-13\"\n    },\n    \"ticket\": {\n        \"date\": \"2023-05-17\",\n        \"time\": \"16:00\",\n        \"venue\": \"The Shawshank State Park\",\n        \"price\": \"$10.00\"\n    }\n}",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "Drop Meera a note saying lunch at 1?",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Meera",
+        "message": "lunch at 1?"
+      },
+      "pred_raw": "```json\n{\n    \"time\": \"12:00 PM\",\n    \"location\": \"The Great Hall\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Drop Karan a note saying lunch at 1?",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Karan",
+        "message": "lunch at 1?"
+      },
+      "pred_raw": "```json\n{\n    \"user\": \"Karan\",\n    \"message\": \"Sure, I'll drop you off at 1.\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Add an expense of 681.4 for phone recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 681.4,
+        "category": "bills",
+        "item": "phone recharge"
+      },
+      "pred_raw": "```json\n{\n    \"amount\": 681.4,\n    \"description\": \"Phone Recharge\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "Add an expense of 673.9 for coffee",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 673.9,
+        "category": "food",
+        "item": "coffee"
+      },
+      "pred_raw": "```json\n{\n    \"name\": \"coffee\",\n    \"amount\": 673.9,\n    \"description\": \"Coffee purchase\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "Don't let me forget to email the report this Sunday morning",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "email the report",
+        "when": "this Sunday morning"
+      },
+      "pred_raw": "```json\n{\n  \"subject\": \"Request: Don't let me forget to email the report\",\n  \"body\": \"Dear [Recipient's Name],\\n\\nI hope this message finds you well. I am writing to request that we send a copy of the report to our team for review and feedback before it is finalized.\\n\\nThank you in advance for your attention to this matter.\\n\\nBest regards,\\n[Your Name]\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "WhatsApp Karan - lunch at 1?",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Karan",
+        "message": "lunch at 1?"
+      },
+      "pred_raw": "```json\n{\n    \"request\": {\n        \"time\": \"2023-04-05T12:00:00Z\",\n        \"location\": \"Karaoke Lounge\",\n        \"food\": \"Lunch\",\n        \"guests\": [\"Karan\"]\n    }\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "I need a nudge to email the report at 6 pm today, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "email the report",
+        "when": "at 6 pm today"
+      },
+      "pred_raw": "```json\n{\n    \"subject\": \"Nudge: Report due by 6 PM\",\n    \"body\": \"Dear [Recipient's Name],\\n\\nI hope this message finds you well.\\n\\nI am writing to request that you receive the attached report by 6 PM today. Please ensure that it is completed and submitted as soon as possible.\\n\\nThank you for your attention to this matter.\\n\\nBest regards,\\n[Your Name]\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Don't let me forget to email the report tomorrow at 9 am",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "email the report",
+        "when": "tomorrow at 9 am"
+      },
+      "pred_raw": "```json\n{\n    \"report\": {\n        \"title\": \"Report Title\",\n        \"date\": \"2023-10-05\",\n        \"summary\": \"Summary of the report.\",\n        \"content\": [\n            {\n                \"section\": \"Introduction\",\n                \"text\": \"This is the introduction section of the report. It provides a brief overview of the topic and its significance.\"\n            },\n            {\n                \"section\": \"Methodology\",\n                \"text\": \"",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Set a reminder: back up my laptop in two hours",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "back up my laptop",
+        "when": "in two hours"
+      },
+      "pred_raw": "```json\n{\n  \"action\": \"setReminder\",\n  \"reminder\": {\n    \"time\": \"2023-10-05T14:00:00Z\",\n    \"message\": \"back up my laptop\"\n  }\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "Can you remind me to back up my laptop on Friday evening?",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "back up my laptop",
+        "when": "on Friday evening"
+      },
+      "pred_raw": "```json\n{\n  \"date\": \"Friday\",\n  \"action\": \"backup\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "I need a nudge to water the plants at 6 pm today, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "water the plants",
+        "when": "at 6 pm today"
+      },
+      "pred_raw": "```json\n{\n    \"time\": \"18:00\",\n    \"action\": \"water\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Don't let me forget to book train tickets on 25 December",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "book train tickets",
+        "when": "on 25 December"
+      },
+      "pred_raw": "```json\n{\n    \"date\": \"2023-12-25\",\n    \"train_tickets\": {\n        \"train_1\": {\n            \"departure_time\": \"14:00\",\n            \"arrival_time\": \"16:00\"\n        },\n        \"train_2\": {\n            \"departure_time\": \"17:00\",\n            \"arrival_time\": \"19:00\"\n        }\n    }\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "don't let me forget to email the report tomorrow at 9 am",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "email the report",
+        "when": "tomorrow at 9 am"
+      },
+      "pred_raw": "```json\n{\n    \"report\": {\n        \"title\": \"Report on Project X\",\n        \"date\": \"2023-10-05\",\n        \"summary\": \"This is a summary of the project's progress and any issues encountered.\",\n        \"issues\": [\n            {\n                \"issue_type\": \"bug\",\n                \"description\": \"The software crashed unexpectedly during testing.\"\n            },\n            {\n                \"issue_type\": \"feature\",\n                \"description\": \"The user",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Paid ₹4396 for phone recharge just now",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 4396,
+        "category": "bills",
+        "item": "phone recharge"
+      },
+      "pred_raw": "```json\n{\n  \"transaction_id\": \"TX-12345\",\n  \"amount\": {\n    \"currency\": \"INR\",\n    \"value\": 4396\n  },\n  \"status\": \"completed\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Drop Rohan a note saying I will be late",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Rohan",
+        "message": "I will be late"
+      },
+      "pred_raw": "```json\n{\n  \"to\": \"Rohan\",\n  \"message\": \"I will be late\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Remind me to back up my laptop on 25 December",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "back up my laptop",
+        "when": "on 25 December"
+      },
+      "pred_raw": "```json\n{\n    \"date\": \"2023-12-25\",\n    \"action\": \"back_up\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "WhatsApp Rohan - the meeting is moved to 4",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Rohan",
+        "message": "the meeting is moved to 4"
+      },
+      "pred_raw": "```json\n{\n    \"meeting\": {\n        \"start_time\": \"2023-10-05T16:00:00Z\",\n        \"end_time\": \"2023-10-05T17:00:00Z\"\n    }\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Paid ₹1260 for doctor visit just now",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 1260,
+        "category": "health",
+        "item": "doctor visit"
+      },
+      "pred_raw": "```json\n{\n  \"patient\": {\n    \"name\": \"John Doe\",\n    \"age\": 45,\n    \"gender\": \"Male\"\n  },\n  \"doctor\": {\n    \"name\": \"Dr. Jane Smith\",\n    \"specialization\": \"General Medicine\",\n    \"experience\": 5\n  }\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "drop rohan a note saying call me when free",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Rohan",
+        "message": "call me when free"
+      },
+      "pred_raw": "```json\n{\n  \"name\": \"rohan\",\n  \"message\": \"call me when free\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Tell Priya happy birthday",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Priya",
+        "message": "happy birthday"
+      },
+      "pred_raw": "```json\n{\n  \"name\": \"Priya\",\n  \"age\": 25,\n  \"birthday\": true\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "Drop Rohan a note saying call me when free",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Rohan",
+        "message": "call me when free"
+      },
+      "pred_raw": "```json\n{\n  \"name\": \"Rohan\",\n  \"phone_number\": \"+1234567890\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "log 4648 rs phone recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 4648,
+        "category": "bills",
+        "item": "phone recharge"
+      },
+      "pred_raw": "```json\n{\n    \"phone_number\": \"+1234567890\",\n    \"amount\": 100,\n    \"currency\": \"USD\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "Tell Tanvi the meeting is moved to 4",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Tanvi",
+        "message": "the meeting is moved to 4"
+      },
+      "pred_raw": "```json\n{\n    \"meeting\": {\n        \"title\": \"Meeting with Tanvi\",\n        \"location\": \"Online Meeting\",\n        \"date\": \"2023-10-05\"\n    }\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "I spent 978.2 rupees on movie ticket",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 978.2,
+        "category": "entertainment",
+        "item": "movie ticket"
+      },
+      "pred_raw": "```json\n{\n    \"movie\": {\n        \"name\": \"The Shawshank Redemption\",\n        \"rating\": 9.0,\n        \"year\": 1994\n    },\n    \"details\": [\n        {\n            \"title\": \"The Shawshank Redemption\",\n            \"director\": \"Frank Darabont\",\n            \"genre\": [\"Drama\", \"Crime\"],\n            \"actors\": [\"Tim Robbins\", \"Morgan Freeman\"]\n        }\n    ]\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "WhatsApp Dev - happy birthday",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Dev",
+        "message": "happy birthday"
+      },
+      "pred_raw": "```json\n{\n  \"message\": \"Happy Birthday to me!\",\n  \"date\": \"2023-12-31\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "pizza cost me 1758 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 1758,
+        "category": "food",
+        "item": "pizza"
+      },
+      "pred_raw": "{\n    \"name\": \"pizza\",\n    \"price\": 1758,\n    \"quantity\": 2\n}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Drop Karan a note saying call me when free",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Karan",
+        "message": "call me when free"
+      },
+      "pred_raw": "```json\n{\n  \"name\": \"Karan\",\n  \"phone_number\": \"+1234567890\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "I need a nudge to back up my laptop on 25 December, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "back up my laptop",
+        "when": "on 25 December"
+      },
+      "pred_raw": "```json\n{\n    \"date\": \"2023-12-25\",\n    \"action\": \"back_up\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "I need a nudge to go to the gym next week, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "go to the gym",
+        "when": "next week"
+      },
+      "pred_raw": "```json\n{\n  \"date\": \"2023-10-05\",\n  \"reason\": \"I'm feeling tired and don't want to workout.\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Add an expense of 992.9 for metro card recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 992.9,
+        "category": "transport",
+        "item": "metro card recharge"
+      },
+      "pred_raw": "```json\n{\n    \"amount\": 992.9,\n    \"currency\": \"USD\",\n    \"description\": \"Metro Card Recharge\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "Send a message to Naman: happy birthday",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Naman",
+        "message": "happy birthday"
+      },
+      "pred_raw": "```json\n{\n  \"to\": \"Naman\",\n  \"message\": \"Happy birthday!\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "i need a nudge to go to the gym next week, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "go to the gym",
+        "when": "next week"
+      },
+      "pred_raw": "```json\n{\n  \"date\": \"2023-10-05\",\n  \"reason\": \"I'm feeling really motivated and ready for my workout this week.\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "coffee cost me 3817 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 3817,
+        "category": "food",
+        "item": "coffee"
+      },
+      "pred_raw": "```json\n{\n    \"name\": \"Coffee\",\n    \"cost\": 3817,\n    \"price_per_unit\": 25.00\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Drop Priya a note saying happy birthday",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Priya",
+        "message": "happy birthday"
+      },
+      "pred_raw": "```json\n{\n  \"name\": \"Priya\",\n  \"message\": \"Happy Birthday!\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Add an expense of 3005 for metro card recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 3005,
+        "category": "transport",
+        "item": "metro card recharge"
+      },
+      "pred_raw": "```json\n{\n    \"amount\": 3005,\n    \"card_type\": \"metro\",\n    \"description\": \"Recharge for metro card\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "Drop Harsh a note saying I reached home",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Harsh",
+        "message": "I reached home"
+      },
+      "pred_raw": "```json\n{\n  \"message\": \"You have reached home.\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Log 4673 rs notebook",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 4673,
+        "category": "stationery",
+        "item": "notebook"
+      },
+      "pred_raw": "```json\n{\n    \"request\": {\n        \"method\": \"POST\",\n        \"url\": \"https://api.example.com/requests\",\n        \"headers\": {\n            \"Content-Type\": \"application/json\"\n        },\n        \"body\": {\n            \"notebook_id\": \"4673\",\n            \"action\": \"log\"\n        }\n    }\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "Tell Tanvi please send the notes",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Tanvi",
+        "message": "please send the notes"
+      },
+      "pred_raw": "```json\n{\n  \"subject\": \"Request for Notes\",\n  \"body\": \"Please send me the notes\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "whatsapp karan - i will be late",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Karan",
+        "message": "I will be late"
+      },
+      "pred_raw": "```json\n{\n  \"text\": \"whatsapp karan - i will be late\",\n  \"entities\": {\n    \"text\": [\n      {\n        \"type\": \"keyword\",\n        \"value\": \"karan\"\n      },\n      {\n        \"type\": \"keyword\",\n        \"value\": \"i\"\n      },\n      {\n        \"type\": \"keyword\",\n        \"value\": \"will\"\n      },\n      {\n        \"type\": \"keyword\",\n        \"value\": \"be\"",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Drop Vikram a note saying the meeting is moved to 4",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Vikram",
+        "message": "the meeting is moved to 4"
+      },
+      "pred_raw": "```json\n{\n    \"meeting\": {\n        \"title\": \"Meeting with Vikram\",\n        \"date\": \"2023-10-05\",\n        \"location\": \"Virtual Meeting Room\"\n    },\n    \"notes\": [\n        {\n            \"content\": \"Vikram, please drop me a note saying that the meeting has been moved to 4.\"\n        }\n    ]\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Add an expense of 729.1 for auto ride",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 729.1,
+        "category": "transport",
+        "item": "auto ride"
+      },
+      "pred_raw": "```json\n{\n    \"amount\": 729.1,\n    \"category\": \"Auto Ride\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "tonight at 8, remind me to prepare for the viva",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "prepare for the viva",
+        "when": "tonight at 8"
+      },
+      "pred_raw": "```json\n{\n    \"date\": \"2023-10-05\",\n    \"time\": \"19:00\",\n    \"subject\": \"Prepare for Viva\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "Paid ₹225.7 for phone recharge just now",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 225.7,
+        "category": "bills",
+        "item": "phone recharge"
+      },
+      "pred_raw": "```json\n{\n  \"transaction\": {\n    \"amount\": 225.7,\n    \"currency\": \"INR\",\n    \"status\": \"pending\"\n  },\n  \"details\": {\n    \"phone\": \"1234567890\",\n    \"reason\": \"Phone recharge\",\n    \"date\": \"2023-04-01T12:00:00Z\"\n  }\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "I spent 350.7 rupees on notebook",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 350.7,
+        "category": "stationery",
+        "item": "notebook"
+      },
+      "pred_raw": "```json\n{\n    \"notebook\": {\n        \"name\": \"Notebook\",\n        \"price\": 350.7,\n        \"quantity\": 1\n    }\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "movie ticket cost me 252 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 252,
+        "category": "entertainment",
+        "item": "movie ticket"
+      },
+      "pred_raw": "```json\n{\n    \"ticket_price\": 252,\n    \"total_cost\": 252\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Drop Vikram a note saying lunch at 1?",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Vikram",
+        "message": "lunch at 1?"
+      },
+      "pred_raw": "```json\n{\n    \"request\": {\n        \"subject\": \"Lunch\",\n        \"date\": \"2023-04-05\",\n        \"time\": \"12:00 PM\"\n    }\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Don't let me forget to call the plumber on Friday evening",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "call the plumber",
+        "when": "on Friday evening"
+      },
+      "pred_raw": "```json\n{\n  \"date\": \"2023-10-05\",\n  \"time\": \"18:00\",\n  \"details\": {\n    \"plumber\": \"John Doe\",\n    \"address\": \"123 Main Street, Anytown, USA\"\n  }\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "metro card recharge cost me 1833 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 1833,
+        "category": "transport",
+        "item": "metro card recharge"
+      },
+      "pred_raw": "```json\n{\n    \"currency\": \"USD\",\n    \"amount\": 1833,\n    \"description\": \"Metro Card Recharge\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "WhatsApp Vikram - please send the notes",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Vikram",
+        "message": "please send the notes"
+      },
+      "pred_raw": "```json\n{\n  \"notes\": [\n    {\n      \"title\": \"Meeting with Mr. Singh\",\n      \"content\": \"Discussing project updates and challenges faced by the team.\"\n    },\n    {\n      \"title\": \"Team meeting\",\n      \"content\": \"Reviewing progress, addressing any issues, and planning for future tasks.\"\n    }\n  ]\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "notebook cost me 227.5 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 227.5,
+        "category": "stationery",
+        "item": "notebook"
+      },
+      "pred_raw": "```json\n{\n    \"name\": \"cost\",\n    \"value\": {\n        \"currency\": \"USD\",\n        \"amount\": 227.5\n    }\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Don't let me forget to buy groceries next Monday at 10:30",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "buy groceries",
+        "when": "next Monday at 10:30"
+      },
+      "pred_raw": "```json\n{\n    \"date\": \"2023-04-15\",\n    \"items\": [\n        {\n            \"name\": \"Apples\",\n            \"quantity\": 5,\n            \"price\": 2.99\n        },\n        {\n            \"name\": \"Bananas\",\n            \"quantity\": 3,\n            \"price\": 1.99\n        }\n    ]\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Paid ₹2642 for notebook just now",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 2642,
+        "category": "stationery",
+        "item": "notebook"
+      },
+      "pred_raw": "```json\n{\n  \"request\": {\n    \"amount\": 2642,\n    \"currency\": \"INR\",\n    \"type\": \"payment\"\n  }\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Drop Sneha a note saying call me when free",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Sneha",
+        "message": "call me when free"
+      },
+      "pred_raw": "```json\n{\n  \"name\": \"Sneha\",\n  \"phone_number\": \"+1234567890\",\n  \"date\": \"2023-04-01\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "movie ticket cost me 1282 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 1282,
+        "category": "entertainment",
+        "item": "movie ticket"
+      },
+      "pred_raw": "```json\n{\n    \"ticket_price\": 1282,\n    \"total_cost\": 0.5,\n    \"discounted_price\": 641,\n    \"remaining_budget\": 731\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "whatsapp naman - happy birthday",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Naman",
+        "message": "happy birthday"
+      },
+      "pred_raw": "```json\n{\n  \"message\": \"Happy Birthday to Naman! 🎉🎂\",\n  \"type\": \"notification\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "I need a nudge to pick up the parcel tonight at 8, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "pick up the parcel",
+        "when": "tonight at 8"
+      },
+      "pred_raw": "```json\n{\n    \"request\": {\n        \"sender\": \"John Doe\",\n        \"receiver\": \"Jane Smith\",\n        \"message\": \"Pick up the parcel tonight at 8 PM\"\n    }\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Tell Rohan lunch at 1?",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Rohan",
+        "message": "lunch at 1?"
+      },
+      "pred_raw": "```json\n{\n    \"request\": {\n        \"time\": \"1\",\n        \"location\": \"Rohan's place\"\n    }\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "I spent 4390 rupees on phone recharge",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 4390,
+        "category": "bills",
+        "item": "phone recharge"
+      },
+      "pred_raw": "```json\n{\n    \"transaction\": {\n        \"amount\": 4390,\n        \"currency\": \"INR\"\n    },\n    \"details\": [\n        {\n            \"item\": \"Phone\",\n            \"quantity\": 1,\n            \"price_per_item\": 5000\n        }\n    ]\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "pizza cost me 3868 bucks",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 3868,
+        "category": "food",
+        "item": "pizza"
+      },
+      "pred_raw": "{\n    \"name\": \"pizza\",\n    \"price\": 3868,\n    \"quantity\": 1,\n    \"unit\": \"cents\"\n}",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "I need a nudge to prepare for the viva in two hours, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "prepare for the viva",
+        "when": "in two hours"
+      },
+      "pred_raw": "```json\n{\n  \"date\": \"2023-10-05\",\n  \"time\": \"14:00\",\n  \"location\": \"Online\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "WhatsApp Karan - the files are uploaded",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Karan",
+        "message": "the files are uploaded"
+      },
+      "pred_raw": "```json\n{\n  \"file\": {\n    \"name\": \"example.txt\",\n    \"content\": \"This is a sample file content.\"\n  },\n  \"status\": \"success\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Text Karan that the meeting is moved to 4",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Karan",
+        "message": "the meeting is moved to 4"
+      },
+      "pred_raw": "```json\n{\n    \"meeting\": {\n        \"start_time\": \"2023-10-05T10:00:00Z\",\n        \"end_time\": \"2023-10-05T11:00:00Z\"\n    }\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "I need a nudge to renew my passport next Monday at 10:30, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "renew my passport",
+        "when": "next Monday at 10:30"
+      },
+      "pred_raw": "```json\n{\n    \"request\": {\n        \"date\": \"2023-04-15\",\n        \"time\": \"10:30\"\n    }\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "whatsapp sneha - lunch at 1?",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Sneha",
+        "message": "lunch at 1?"
+      },
+      "pred_raw": "```json\n{\n    \"status\": \"success\",\n    \"message\": \"The restaurant is open and you can have a lunch there.\",\n    \"location\": {\n        \"lat\": 37.4208,\n        \"lng\": -122.0850\n    },\n    \"time\": \"1 hour\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "I need a nudge to submit the assignment this Sunday morning, please",
+      "gold": {
+        "intent": "set_reminder",
+        "task": "submit the assignment",
+        "when": "this Sunday morning"
+      },
+      "pred_raw": "```json\n{\n  \"subject\": \"Assignment Submission\",\n  \"date\": \"Sunday\",\n  \"content\": \"Please submit your assignment by [insert submission date] at [insert time].\"\n}\n```",
+      "heldout_template": true,
+      "correct": false
+    },
+    {
+      "text": "Add an expense of 4450 for coffee",
+      "gold": {
+        "intent": "add_expense",
+        "amount": 4450,
+        "category": "food",
+        "item": "coffee"
+      },
+      "pred_raw": "```json\n{\n    \"name\": \"coffee\",\n    \"amount\": 4450,\n    \"description\": \"Coffee purchase\"\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    },
+    {
+      "text": "Text Vikram that please send the notes",
+      "gold": {
+        "intent": "send_message",
+        "recipient": "Vikram",
+        "message": "please send the notes"
+      },
+      "pred_raw": "```json\n{\n  \"notes\": [\n    {\n      \"text\": \"I am going to the store today\",\n      \"date\": \"2023-10-05\"\n    },\n    {\n      \"text\": \"I will be back in a few days\",\n      \"date\": \"2023-10-06\"\n    }\n  ]\n}\n```",
+      "heldout_template": false,
+      "correct": false
+    }
+  ]
+}

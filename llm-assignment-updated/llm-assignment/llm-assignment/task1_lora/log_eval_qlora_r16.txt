@@ -1,0 +1,12 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<02:00,  2.39it/s]Loading weights:  55%|█████▍    | 159/290 [00:00<00:00, 402.46it/s]Loading weights:  87%|████████▋ | 251/290 [00:00<00:00, 445.72it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 376.98it/s]
+{
+  "mode": "lora",
+  "n": 100,
+  "valid_json": 1.0,
+  "exact_match": 1.0,
+  "field_acc": 1.0,
+  "exact_match_seen_templates": 1.0,
+  "exact_match_heldout_templates": 1.0
+}
+failures to inspect: []
